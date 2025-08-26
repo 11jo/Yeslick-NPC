@@ -9,6 +9,42 @@
 
 // Multi-class kit for EE games
 // ----------------------------
+INCLUDE ~%MOD_FOLDER%/lib/a7#add_kit_ex.tpa~
+
+LAF ADD_KIT_EX
+INT_VAR
+  kit_class = 8
+  lower     = RESOLVE_STR_REF(@21)
+  mixed     = RESOLVE_STR_REF(@22)
+  help      = RESOLVE_STR_REF(@23)
+  briefdesc = RESOLVE_STR_REF(@23)
+STR_VAR
+  kit_name  = ~LK_ALAGHOR~
+  unusable  = ~0x00100000~
+  base_class = ~P~
+//  hpclass = ~~
+//  biography = 
+//  clascolr = ~~
+  clasweap  = ~0           0           0           0           0           0           0           0~
+  weapprof  = ~0 1 0 0 1 0 0 1 0 1 1 0 0 1 1 1 0 1 0 0 0 0 1 1 0 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+  abclasrq  = ~0        0      0        0      9       0~
+  abclsmod  = ~0        0      0       0       0        0~
+  abdcdsrq  = ~0       0       0       0       0       0~
+  abdcscrq  = ~0       0       0       0       0       0~
+  alignmnt  = ~1       1       0       0       0       0       0       0       0~
+  dualclas  = ~0       0       0       0       0       0~
+  clab_path = EVAL ~%MOD_FOLDER%/2da/lk#yk.2da~
+  kittable  = ~~
+  luabbr    = ~Cl0~
+  stweap    = ~PLAT04     *      HELM07 BAG20 RING07 RING31    *   BOOT01 AMUL20 BRAC09 BELT04  SW1H31    CLCK07    SHLD24    BAG02    BAG04      *       *     *      *~
+RET
+  kit_id
+END
+
+////// Below previous code using fl#add_kit_ee and qd_multiclass to install Yeslick Kit
+
+/*
+
 ACTION_IF is_ee BEGIN
 	INCLUDE ~%MOD_FOLDER%/lib/qd_multiclass.tpa~	// Enables multiclass kits to both appear properly in character creation and apply the appropriate bonuses during character advancement. Thanks Aquadrizzt!
 END
@@ -132,6 +168,7 @@ ACTION_IF is_ee BEGIN
 	END
 END
 
+*/
 
 /* ---------------- *
  *  Install spells  *
