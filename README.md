@@ -1,6 +1,26 @@
-![Latest Release](https://img.shields.io/github/v/release/SpellholdStudios/Yeslick_NPC?include_prereleases&color=darkred)<a name="top" id="top"> </a>
-![Platform](https://img.shields.io/static/v1?label=platform&message=windows%20%7C%20macos%20%7C%20linux&color=informational)
-![Language](https://img.shields.io/static/v1?label=language&message=English&color=limegreen)
+[![Release](https://img.shields.io/github/v/release/Spellhold-Studios/Yeslick_NPC?include_prereleases&color=%2392403a)](https://github.com/Spellhold-Studios/Yeslick_NPC/releases/latest)
+[![Published](https://img.shields.io/github/release-date-pre/Spellhold-Studios/Yeslick_NPC?display_date=published_at&label=published&color=%2392403a)](https://github.com/Spellhold-Studios/Yeslick_NPC/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/Spellhold-Studios/Yeslick_NPC/total?color=%2392403a)](https://github.com/Spellhold-Studios/Yeslick_NPC/releases)
+[![Platform](https://img.shields.io/badge/platform-Windows%20%a0%20macOS%20%a0%20Linux%20%a0%20Project%20Infinity-%2392403a)](https://github.com/Spellhold-Studios/Yeslick_NPC/releases)
+
+[![Games](https://img.shields.io/badge/games-BG2%20%a0%20BGT%20%a0%20BG2%3AEE%20%a0%20EET-%2392403a)](https://github.com/Spellhold-Studios/Yeslick_NPC/releases)
+[![Language](https://img.shields.io/badge/language-english-%2392403a)](https://github.com/Spellhold-Studios/Yeslick_NPC/releases)
+
+<!--
+Badges white space separator: %20%a0%20
+Badges ":" (colon) symbol: %3A
+Badges "-" (hyphen) symbol: --
+Games full list: BG1 BG2 BGT BG%3AEE SoD BG2%3AEE EET IWD1 IWD2 IWD%3AEE PST PST%3AEE
+IETF language tags: https://spellhold-studios.github.io/assets/docs/ietf-lang-tags.pdf
+Common language tags: en cs de es fr it ja ko pl pt--BR ru zh--CN zh--TW
+Why some badges update slowly: https://github.com/pujux/badge-it/issues/78
+-->
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Spellhold-Studios/Spellhold-Studios.github.io/main/assets/images/shs-corner-logo.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Spellhold-Studios/Spellhold-Studios.github.io/main/assets/images/shs-corner-logo.svg" />
+  <img alt="SHS logo" src="https://raw.githubusercontent.com/Spellhold-Studios/Spellhold-Studios.github.io/main/assets/images/shs-corner-logo.svg" width="212" height="132">
+</picture>
 
 <div align="center"><h1></a>Yeslick NPC</h1>
 
@@ -151,7 +171,7 @@ A: Absolutely, you don't need our permission to do crossmod with Yeslick.
 
 **Main author:** <a href="http://www.shsforums.net/user/2005-pixel-kaiser/">Pixel Kaiser</a>  
 **Coder and consultations:** <a href="http://www.shsforums.net/user/3481-kaeloree/">K'aeloree</a>  
-**Update help:** <a href="http://www.shsforums.net/user/40982-artemius-i/">Artemius_I</a> and <a href="http://www.shsforums.net/user/24495-gwendolyne/">Gwendolyne</a>  
+**Update help:** <a href="https://www.shsforums.net/user/14985-argent77/">Argent77</a>, <a href="http://www.shsforums.net/user/40982-artemius-i/">Artemius_I</a> and <a href="http://www.shsforums.net/user/24495-gwendolyne/">Gwendolyne</a>  
 **Kit, items and ToB content:** <a href="http://www.shsforums.net/user/9063-lava-delvortel/">Lava Del'Vortel</a>  
 **Proofreaders:** RavenBlack, Choo Choo, Vivian, Rhaella, Artemius_I
 
@@ -179,6 +199,22 @@ A: Absolutely, you don't need our permission to do crossmod with Yeslick.
 
 
 ## <a name="versions" id="versions"></a>Versions History
+
+##### Versions 5.1 (September 2025)
+
+- Fixed Alaghor of Clangeddin kit and making it a true multiclass for EE by Argent77.
+
+## 
+
+##### Versions 5.0 (13 September 2020)
+
+- Fixed banter: Yeslick should not banter if the other NPC is not in party; Yeslick should not say first line of the other NPCs.
+- Compatibility with Imoen4Ever added.
+- Optimized scripting of friendship path: dialogues cannot trigger too early if NPC is klick-talked to.
+- Corrected I_C_T2 to I_C_T.
+- Disabled part of dialogue about PC leaving BG city as a hero in case SoD happened.
+
+## 
 
 ##### Versions 4.0 (18 April 2020)
 

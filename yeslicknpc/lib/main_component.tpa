@@ -18,7 +18,6 @@ APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~ UNLESS ~CD_STATE_NOTVALID~
 
 INCLUDE ~%MOD_FOLDER%/lib/gw_functions.tpa~						// Loads macros and functions library dealing with tooltip appending and specific EE items descriptions.
 INCLUDE ~%MOD_FOLDER%/lib/gw_convert_inventory_bam_to_ee.tpa~	// Loads function converting inventory BAMs to EE.
-INCLUDE ~%MOD_FOLDER%/lib/fl#add_kit_ee.tpa~
 
 ACTION_IF is_eet BEGIN
 	INCLUDE ~%MOD_FOLDER%/lib/eet.tph~
