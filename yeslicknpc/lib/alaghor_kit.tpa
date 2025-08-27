@@ -21,7 +21,7 @@ INT_VAR
 STR_VAR
   kit_name  = ~LK_ALAGHOR~
   unusable  = ~0x00100000~
-  base_class = ~P~
+//  base_class = ~P~
 //  hpclass = ~~
 //  biography = 
 //  clascolr = ~~
