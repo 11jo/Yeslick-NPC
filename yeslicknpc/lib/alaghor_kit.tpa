@@ -31,19 +31,19 @@ INT_VAR
   // KITLIST.2DA
   kit_class			// Cleric (non-EE) or Fighter/Cleric (EE)
   lower = RESOLVE_STR_REF(@21)				// LOWER = Nom du kit en minuscules (alaghor of clangeddin)
-  mixed = RESOLVE_STR_REF(@22)				// MIXED = Nom du kit en minuscules avec majuscule au début (Alaghor of Clangeddin)
+  mixed = RESOLVE_STR_REF(@22)				// MIXED = Nom du kit en minuscules avec majuscule au dÃ©but (Alaghor of Clangeddin)
   help  = RESOLVE_STR_REF(@23)				// HELP  = Description du kit
 STR_VAR
   kit_name = ~LK_ALAGHOR~
   // KIT ABILITIES 2DA FILE (path to CLAB-type file)
-  clab_path = ~yeslicknpc/2da/lk#yk.2da~																	// Habilités gagnées par niveau.
+  clab_path = ~yeslicknpc/2da/lk#yk.2da~																	// HabilitÃ©s gagnÃ©es par niveau.
   // Base class for kit abilities assignment
   base_class
   // UNUSABLE FLAGS
   unusable = ~0x00100000~	// Autorisation d'objets - 0x00100000 = SWASHBUCKLER
   // CLASS WEAPON PROFICIENCIES____________________________________________________________________________________
   // CLASWEAP     SMALL_SWORD LARGE_SWORD BLUNT       MISSILE     BOW         SPIKED      AXE         SPEAR
-  clasweap =     ~0           0           1           1           0           1           0           0~		// Types d'armes autorisés
+  clasweap =     ~0           0           1           1           0           1           0           0~		// Types d'armes autorisÃ©s
   // WEAPON PROFICIENCIES________________________________________________________________________________________________________
   //                                        B       T   S           F   Q             S S
   //                                        A       W   C           L   U             W I T
@@ -57,29 +57,29 @@ STR_VAR
   //                        O O B E U K A I O O O A S A A G M L E E I A A B B B A I D E P O A A A A A A A A A A A A A A A A A A A
   //                        R R O A N E X L R R R X W N K E E U A R N C F O O O R N E L O N 2 3 4 5 6 7 8 9 1 1 1 1 1 1 1 1 1 1 2
   // WEAPPROF.2DA           D D W R T D E E D D D E O A I R R B R D G E F W W W T G D D N S                 0 1 2 3 4 5 6 7 8 9 0
-  weapprof =               ~0 0 0 0 2 2 0 2 0 0 0 0 0 0 0 0 2 2 0 0 2 2 2 0 0 0 0 2 2 2 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~	// Compétences autorisées
+  weapprof =               ~0 0 0 0 2 2 0 2 0 0 0 0 0 0 0 0 2 2 0 0 2 2 2 0 0 0 0 2 2 2 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~	// CompÃ©tences autorisÃ©es
   // MINIMUM KIT STATS_________________________________________________
   // ABCLASRQ.2DA           STR      DEX    CON      INT    WIS     CHR
-  abclasrq =               ~9        0      0        0      9       0~							// Scores de caractéristiques minimaux nécessaires.
+  abclasrq =               ~9        0      0        0      9       0~							// Scores de caractÃ©ristiques minimaux nÃ©cessaires.
   // KIT STAT MODIFIERS________________________________________________
   // ABCLSMOD.2DA           STR      DEX    CON     INT     WIS     CHR
-  abclsmod =               ~0        0      0       0       0        0~						// Modificateurs des scores de caractéristiques.
+  abclsmod =               ~0        0      0       0       0        0~						// Modificateurs des scores de caractÃ©ristiques.
   // REQUIREMENTS TO DUAL TO THIS KIT__________________________________
   // ABDCDSRQ.2DA           STR     DEX     CON     INT     WIS     CHR
-  // abdcdsrq =               ~0       0       0       0       0       0~							// Caractéristiques minimales pour se jumeler VERS le kit.
+  // abdcdsrq =               ~0       0       0       0       0       0~							// CaractÃ©ristiques minimales pour se jumeler VERS le kit.
   // REQUIREMENTS TO DUAL FROM THIS KIT________________________________
   // ABDCSCRQ.2DA           STR     DEX     CON     INT     WIS     CHR
-  // abdcscrq =               ~0       0       0       0       0       0~							// Caractéristiques minimales pour se jumeler DEPUIS le kit.
+  // abdcscrq =               ~0       0       0       0       0       0~							// CaractÃ©ristiques minimales pour se jumeler DEPUIS le kit.
   // ALIGNMENT RESTRICTIONS___________________________________________________________________
   // ALIGNMNT.2DA           LG      LN      LE      NG      NN      NE      CG      CN      CE
-  alignmnt =               ~1       1       0       0       0       0       0       0       0~	// Alignements autorisés.
+  alignmnt =               ~1       1       0       0       0       0       0       0       0~	// Alignements autorisÃ©s.
   // DUAL CLASS OPTIONS________________________________________________
   // DUALCLASS.2DA          FIG     CLE     MAG     THI     DRU     RAN
-  // dualclas =               ~0       0       0       0       0       0~							// Possibilités de jumelage.
+  // dualclas =               ~0       0       0       0       0       0~							// PossibilitÃ©s de jumelage.
   // HIGH LEVEL ABILITIES ABBREVIATION
   // LUABBR.2DA
-  luabbr																								// Habiletés de Haut niveau.
-  // luabbr = ~Cl0~																						// Habiletés de Haut niveau.
+  luabbr																								// HabiletÃ©s de Haut niveau.
+  // luabbr = ~Cl0~																						// HabiletÃ©s de Haut niveau.
   kittable
   // TOB STARTING EQUIPMENT_________________________________________________________________________________________________________________________________________________
   //                                                                                   B                                                                                   W
