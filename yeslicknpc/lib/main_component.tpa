@@ -154,6 +154,7 @@ COPY ~%MOD_FOLDER%/creatures/lk#yesl.cre~		~override/lk#yesl.cre~
 	WRITE_ASCIIE DIALOG          ~%DEST_RES%~ #8
 	WRITE_ASCIIE DEATHVAR        ~LK#YESLK~ #32
 	WRITE_ASCIIE SCRIPT_OVERRIDE ~%DEST_RES%~ #8
+	REPLACE_CRE_ITEM ~lk#yesw~ #0 #0 #0 ~IDENTIFIED~ ~weapon1~ EQUIP
 	SAY BIO @32					/* When asked about his past, Yeslick chuckles grimly. "There ain't nothin' there ye be wantin' to know, young 'un. Trust me." From what you have gleaned, Yeslick is peculiar for a dwarf; a follower of Vergadain, the Dwarven god of wealth and luck and Clangeddin, Dwarven god of war, he is an unassuming companion with an aversion to alcohol and the undead. You know little about his history beyond that he grew up in the Dales to the north and that heat makes him extremely irritable. */
 //  SAY MORALE ~~
 	SAY LEADER @33				/* Slow and steady while I'm leader. */
@@ -214,7 +215,17 @@ APPEND ~pdialog.2da~ ~LK#YESLK LK#YESP LK#YESJ LK#YESD LK#YE25P LK#YE25J LK#YE25
 /* ------- *
  *  Items  *
  * -------- */
-COPY ~%MOD_FOLDER%/items/lk#yesw.itm~ ~override~
+// COPY ~%MOD_FOLDER%/items/lk#yesw.itm~ ~override~
+
+COPY_EXISTING ~HAMM04.itm~ ~override/lk#yesw.itm~
+	WRITE_ASCII 0x3a ~lk#yesw~
+	LPF ALTER_ITEM_HEADER 
+		INT_VAR 
+			check_headers = 1
+		STR_VAR 
+			icon = ~lk#yesw~
+	END
+      LPF ALTER_EFFECT INT_VAR match_opcode = 7 match_parameter2 = 21 parameter1 = 50 END 
 
 
 /* ----------- *

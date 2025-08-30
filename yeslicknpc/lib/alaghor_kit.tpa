@@ -137,11 +137,16 @@ BUT_ONLY
 // -------------
 COPY ~%MOD_FOLDER%/spells/lk#y1.spl~ ~override/lk#y1.spl~
 	SAY NAME1 @28
+	SAY NAME2 @28
+	SAY DESC @29
 	SAY UNIDENTIFIED_DESC @29
 BUT_ONLY
 
 COPY ~%MOD_FOLDER%/items/lk#y1a.itm~ ~override/lk#y1a.itm~
 	SAY NAME1 @28
+	SAY NAME2 @28
+	SAY DESC @29
+	SAY UNIDENTIFIED_DESC @29
 BUT_ONLY
 
 
