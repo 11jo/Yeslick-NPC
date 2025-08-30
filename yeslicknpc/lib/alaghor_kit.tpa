@@ -16,10 +16,12 @@ ACTION_IF is_ee BEGIN
   OUTER_SET kit_class = 8   // Fighter/Cleric
   OUTER_SPRINT luabbr ~FC0~ // Use Fighter/Cleric table
   OUTER_SPRINT base_class ~P~ // Priest
+  OUTER_SPRINT kittable ~K_FC_D~
 END ELSE BEGIN
   OUTER_SET kit_class = 3   // Cleric
   OUTER_SPRINT luabbr ~Cl0~ // Use Cleric table
   OUTER_SPRINT base_class ~~
+  OUTER_SPRINT kittable ~K_C_D~
 END
 
 LAF ADD_KIT_EX
@@ -78,6 +80,7 @@ STR_VAR
   // LUABBR.2DA
   luabbr																								// Habiletés de Haut niveau.
   // luabbr = ~Cl0~																						// Habiletés de Haut niveau.
+  kittable
   // TOB STARTING EQUIPMENT_________________________________________________________________________________________________________________________________________________
   //                                                                                   B                                                                                   W
   //                          S                                    C            A      R                                                                                   E
