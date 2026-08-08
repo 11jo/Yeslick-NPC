@@ -30,7 +30,7 @@ END
 
 IF ~~ Yjoinf
   SAY @13 /* Oh... oh, aye. I understand. If me old legs weren't so damn useless, maybe I coulda made it here sooner and had been of more use ta ye. Iffin' ye need me, I'll be in the Thunderhead Tavern. May as well try the local ale ta make the trip seem more worthwhile, eh? */
-  IF ~~ DO ~SetGlobal("LK#YeslickTavernSpawn","GLOBAL",1) MoveToPoint([0.0]) Wait(2) DestroySelf()~ EXIT
+  IF ~~ DO ~EscapeAreaMove("AR0509",408,491,6)~ EXIT
 END
 
 IF ~~ Yjoing

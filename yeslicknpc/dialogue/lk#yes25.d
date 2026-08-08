@@ -46,7 +46,7 @@ END
 IF~~THEN REPLY @14 /* Not at the moment. Stay here until I need you again. */ DO ~SetGlobal("LK#YeslickJoined","LOCALS",0)~ EXIT
 IF~~THEN REPLY @15 /* Actually, I still need your skills, Yeslick. Remain with me. */ DO ~JoinParty()~ EXIT
 
-CHAIN IF ~~ THEN LK#YE25P Rejoin000
+CHAIN IF ~Global("LK#YeslickJoined","LOCALS",0)~ THEN LK#YE25P Rejoin000
 @16 /* Hoi! It's ye, <PRO_GIRLBOY>. Have ye returned to pick up this ol' bag of bones, eh? */
 END
 IF~~THEN REPLY @17 /* Yes. Welcome back, Yeslick. */ DO ~SetGlobal("LK#YeslickJoined","LOCALS",1) JoinParty()~ EXIT
