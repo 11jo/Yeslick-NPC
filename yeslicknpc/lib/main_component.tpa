@@ -86,28 +86,6 @@ ACTION_IF is_ee BEGIN
 	COMPILE ~%MOD_FOLDER%/dialogue/ee.d~
 END
 
-// Fate Spirit
-// -----------
-ACTION_IF is_eet BEGIN
-	EXTEND_TOP ~ar4500.bcs~ ~%MOD_FOLDER%\scripts\eetyeslick.baf~
-	INCLUDE ~EET/other/EET_functions.tph~
-	LAF ~EET_NPC_TRANSITION~
-		INT_VAR
-			type = 2
-		STR_VAR
-			dv = "LK#YESLK"
-			override_SoA = "lk#yesl"
-			override_ToB = "lk#yes25"
-			dialog_ToB = "LK#YES25"
-			traFile = EVAL "yeslicknpc/translations/%LANGUAGE%/fatesp.tra"
-			string = "@0"
-			stringPosDV = "Wilson"
-	END
-END ELSE BEGIN
-	COMPILE ~%MOD_FOLDER%/dialogue/fatesp.d~
-END
-
-
 /* ----------------------------- *
  *  Copying files and creatures  *
  * ----------------------------- */
@@ -135,6 +113,7 @@ ACTION_IF is_ee BEGIN
 END ELSE BEGIN
 	COPY ~%MOD_FOLDER%/bam~	~override~
 END
+
 
 // Copy creatures
 // --------------
@@ -200,6 +179,32 @@ COPY ~%MOD_FOLDER%/creatures/lk#yesl.cre~		~override/lk#yesl.cre~
 	SAY HIDDEN_IN_SHADOWS @68	/* Watch what you say. */
 	SAY PICKED_POCKET @69		/* 'Twould be good if you tithed a few coins now and then. The favour of gods is worth a few gold. */
 BUT_ONLY
+
+
+// Fate Spirit
+// -----------
+ACTION_IF is_eet BEGIN
+//	EXTEND_TOP ~ar4500.bcs~ ~%MOD_FOLDER%\scripts\eetyeslick.baf~
+	INCLUDE ~EET/other/EET_functions.tph~
+	LAF ~EET_NPC_TRANSITION~
+		INT_VAR
+			type = 2
+			default_ToB = 1					//controls if NPC should be spawnable in ToB when the game has been started in ToB (no by default - 0)
+			clean_ToB = 1
+		STR_VAR
+			dv = "LK#YESLK"
+			override_SoA = "lk#yesl"
+			override_ToB = "lk#yes25"
+			dialog_ToB = "LK#YES25"
+			cre_ToB = "lk#yes25"
+			traFile = EVAL "yeslicknpc/translations/%LANGUAGE%/fatesp.tra"
+			string = "@0"
+			stringPosDV = "Wilson"
+			clean_ToB_DV = "Yeslick"
+	END
+END ELSE BEGIN
+	COMPILE ~%MOD_FOLDER%/dialogue/fatesp.d~
+END
 
 
 /* --------- *
