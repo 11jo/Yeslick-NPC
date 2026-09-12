@@ -36,12 +36,12 @@ END
 
 IF ~~ Yrejoina
   SAY @13 /* Music ta me ears, <CHARNAME>! Believe it or not, sittin' here and swillin' ale day in and day out was beginnin' ta grow old. */
-  IF ~~ DO ~JoinParty() SetGlobal("LK#YeslickJoined","LOCALS",1)~ EXIT
+  IF ~~ DO ~SetGlobal("LK#YeslickJoined","LOCALS",1) JoinParty()~ EXIT
 END
 
 IF ~~ Yrejoinb
   SAY @14 /* Ha! I'd like ta see ye last a day in me old mines, <PRO_LADLASS>. I'm more fit than ye seem ta think! Now, let us get goin'! I spent enough time in this noisy bar! */
-  IF ~~ DO ~JoinParty() SetGlobal("LK#YeslickJoined","LOCALS",1)~ EXIT
+  IF ~~ DO ~SetGlobal("LK#YeslickJoined","LOCALS",1) JoinParty()~ EXIT
 END
 
 IF ~~ Yrejoinc

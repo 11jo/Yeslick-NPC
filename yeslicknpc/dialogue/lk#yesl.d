@@ -20,12 +20,12 @@ END
 
 IF ~~Yjoind
   SAY @11 /* A wizard, ye say? Sounds like an excitin' quest ta me! Count me in, and we'll show that wizard what happens when ye mess with <CHARNAME> and Yeslick Orothiar! */
-  IF ~~ DO ~JoinParty() SetGlobal("LK#YeslickJoined","LOCALS",1)~ EXIT
+  IF ~~ DO ~SetGlobal("LK#YeslickJoined","LOCALS",1) JoinParty()~ EXIT
 END
 
 IF ~~ Yjoine
   SAY @12 /* What sort of vile bastards could be so cruel as ta lock away poor Imoen? Worry not, <CHARNAME>! Iffin' there's anyone more willin' ta find Imoen than ye, it'd be me. I won't rest one bit until our search fer the poor lass is done! */
-  IF ~~ DO ~JoinParty() SetGlobal("LK#YeslickJoined","LOCALS",1)~ EXIT
+  IF ~~ DO ~SetGlobal("LK#YeslickJoined","LOCALS",1) JoinParty()~ EXIT
 END
 
 IF ~~ Yjoinf
