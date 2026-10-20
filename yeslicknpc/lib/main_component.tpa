@@ -180,6 +180,8 @@ COPY ~%MOD_FOLDER%/creatures/lk#yesl.cre~		~override/lk#yesl.cre~
 	SAY PICKED_POCKET @69		/* 'Twould be good if you tithed a few coins now and then. The favour of gods is worth a few gold. */
 BUT_ONLY
 
+	// Variable used by FUNCTION GW_FIND_DLG_RESPONSE_STRING to find after which transition NPC will be recalled by Fate Spirit.
+			OUTER_SET fatesp_string = 65027  // Yoshimo
 
 // Fate Spirit
 // -----------
@@ -203,7 +205,8 @@ ACTION_IF is_eet BEGIN
 			clean_ToB_DV = "Yeslick"
 	END
 END ELSE BEGIN
-	COMPILE ~%MOD_FOLDER%/dialogue/fatesp.d~
+		INCLUDE ~%MOD_FOLDER%/lib/gw_dlg_functions.tpa~
+	COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/dialogue/fatesp.d~
 END
 
 
