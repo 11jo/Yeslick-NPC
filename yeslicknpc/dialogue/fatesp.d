@@ -1,4 +1,4 @@
-EXTEND_BOTTOM FATESP 6 #4
+EXTEND_TOP FATESP %fatesp_state% #%fatesp_transition%
 IF ~!Dead("lk#yeslk") !InMyArea("lk#yeslk") Global("lk#yeslkSummonedToB","GLOBAL",0)~ 
 THEN REPLY @0 /* Bring me Yeslick, the dwarven fighter/cleric. */ DO ~CreateVisualEffect("SPPORTAL",[1909.1228])
 Wait(2) 
